@@ -1,16 +1,16 @@
 class Game
 
-  def initialize(opponent_choice)
-    @opponent_choice = opponent_choice
+  def initialize(random_choice)
+    @random_choice = random_choice
 
   end
 
   def rock()
-    if @opponent_choice == "scissors"
+    if @random_choice == "scissors"
       return "You lose"
-    elsif @opponent_choice == "paper"
+    elsif @random_choice == "paper"
       return "You win"
-    elsif @opponent_choice == "rock"
+    elsif @random_choice == "rock"
       return "Draw"
     else
       return "Not valid"
@@ -18,11 +18,11 @@ class Game
   end
 
   def paper()
-    if @opponent_choice == "rock"
+    if @random_choice == "rock"
       return "You lose"
-    elsif @opponent_choice == "scissors"
+    elsif @random_choice == "scissors"
       return "You win"
-    elsif @opponent_choice == "paper"
+    elsif @random_choice == "paper"
       return "Draw"
     else
       return "Not valid"
@@ -30,11 +30,11 @@ class Game
   end
 
   def scissors()
-    if @opponent_choice == "paper"
+    if @random_choice == "paper"
       return "You lose"
-    elsif @opponent_choice == "rock"
+    elsif @random_choice == "rock"
       return "You win"
-    elsif @opponent_choice == "scissors"
+    elsif @random_choice == "scissors"
       return "Draw"
     else
       return "Not valid"
